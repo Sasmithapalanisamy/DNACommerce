@@ -49,7 +49,9 @@ export default function DNARecommendations() {
 
 
     if (profile.healthGoal) tags.push(profile.healthGoal);   
-    profile.supplements?.forEach((s) => tags.push(s.toLowerCase()));
+    // profile.supplements?.forEach((s) => tags.push(s.toLowerCase()));
+    profile.supplements?.forEach((s) => tags.push(s));
+
     if (profile.caffeine) tags.push(profile.caffeine);    
     if (profile.hydration >= 4) tags.push("hydration");          
 

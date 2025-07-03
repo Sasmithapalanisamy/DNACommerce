@@ -304,7 +304,7 @@ export const cosmeticProducts = [
     desc: "Multi-use gel for calming irritated and dry skin.",
     price: 349,
     img: "/image/cosmetic6.jpg",
-    tags: ["hydration", "budget‑friendly", "ethical"],
+    tags: ["hydration", "budget‑friendly", "ethical","V"],
   },
   {
     id: 107,
@@ -312,7 +312,7 @@ export const cosmeticProducts = [
     desc: "Deep skin hydration and plumping formula.",
     price: 1099,
     img: "/image/cosmetic7.jpg",
-    tags: ["hydration", "premium", "non‑comedogenic"],
+    tags: ["hydration", "premium", "non‑comedogenic","VI"],
   },
   {
     id: 108,
@@ -328,7 +328,7 @@ export const cosmeticProducts = [
     desc: "Deep pore cleansing and oil control treatment.",
     price: 649,
     img: "/image/cosmetic9.jpg",
-    tags: ["oil‑control", "ethical", "non‑comedogenic"],
+    tags: ["oil‑control", "ethical", "non‑comedogenic",">60","III"],
   },
   {
     id: 110,
@@ -336,8 +336,39 @@ export const cosmeticProducts = [
     desc: "Mild cleanser that revives dull skin with natural clay.",
     price: 699,
     img: "/image/cosmetic10.jpg",
-    tags: ["brightening", "ethical", "budget‑friendly"],
+    tags: ["brightening", "ethical", "budget‑friendly","I"],
   },
+  {
+  id: 111,
+  name: "Pigment Clear Serum",
+  desc: "Reduces dark spots and evens out skin tone.",
+  price: 799,
+  img: "https://m.media-amazon.com/images/I/61GLPHpIK6L.jpg",
+  tags: ["pigmentation", "sensitive","cellulite"]
+},{
+  id: 112,
+  name: "Daily SPF 50 Moisturizer",
+  desc: "Broad-spectrum sun protection for daily use.",
+  price: 599,
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEQIxRT3NFeWLz9-2mXAoNmk8ibcX9wvFBCw&s",
+  tags: ["30-60", "normal","II"]
+},{
+  id: 113,
+  name: "Body Acne Control Wash",
+  desc: "Gently exfoliates and clears body acne.",
+  price: 499,
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThf0dXzHfleLzgiL04svTDDioRdDBcyPjFzw&s",
+  tags: ["body acne", "oily","keratosis pilaris"]
+},{
+    id: 611,
+    name: "SkinPolish Roughness Scrub",
+    desc: "Gently exfoliates and smoothens rough skin areas.",
+    price: 399,
+    img: "https://www.buddha-beauty.com/cdn/shop/files/black-charcoal-liquorice-skin-polish-facial-scrub-509514.webp?v=1734205211&width=1946",
+    tags: ["roughness","VI"]
+  }
+
+
 ];
 
 export const supplementProducts = [
@@ -347,7 +378,7 @@ export const supplementProducts = [
     desc: "Formulated with magnesium and L‑theanine to promote restful sleep.",
     price: 799,
     img: "/image/supplement1.jpg",
-    tags: ["relaxation", "sleep", "none"],
+    tags: ["relaxation", "sleep", "none","energy-boost"],
   },
   {
     id: 302,
@@ -371,7 +402,7 @@ export const supplementProducts = [
     desc: "Helps improve energy and reduce fatigue caused by iron deficiency.",
     price: 549,
     img: "/image/supplement4.jpg",
-    tags: ["vitamin C", "energy boost", ">300"],
+    tags: ["vitaminC", "energy boost", ">300"],
   },
   {
     id: 305,
@@ -384,10 +415,10 @@ export const supplementProducts = [
   {
     id: 306,
     name: "Vitamin‑C Immune Booster",
-    desc: "Effervescent Vitamin C tablets for immune support and skin health.",
+    desc: "Effervescent vitaminC tablets for immune support and skin health.",
     price: 399,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-OBK62ylgdt2ranjhVIwdPigy5wDbiSwGA&s",
-    tags: ["vitamin C", "hydration", "none"],
+    tags: ["vitaminC", "hydration", "none"],
   },
   {
     id: 307,
@@ -418,9 +449,55 @@ export const supplementProducts = [
     name: "Hydrating Electrolyte Powder",
     desc: "Replenish electrolytes and hydrate efficiently during workouts.",
     price: 599,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnk195x_VJTFAQ4WhJuU8iXmTJia0UYpKiow&s",
+    img: "https://m.media-amazon.com/images/I/61Lm8MLmJQL._UF1000,1000_QL80_.jpg",
     tags: ["hydration", "energy boost", "very active"],
+  },{
+  id: 311,
+  name: "Immune Support Herbal Capsules",
+  desc: "Boosts immunity and helps prevent illness.",
+  price: 499,
+  img: "https://m.media-amazon.com/images/I/61D5sPRw51L._UF1000,1000_QL80_.jpg",
+  tags: ["ill", "energy boost"]
+},{
+  id: 312,
+  name: "Athlete's Protein Shake Mix",
+  desc: "Designed for active bodies to enhance recovery.",
+  price: 899,
+  img: "https://m.media-amazon.com/images/I/51wtepSLzUL._UF1000,1000_QL80_.jpg",
+  tags: ["athletic", "muscle gain","knees"]
+},  {
+    id: 606,
+    name: "BulkUp Muscle Gainer",
+    desc: "Protein and carb blend to support lean muscle gain goals.",
+    price: 799,
+    img: "https://rukminim2.flixcart.com/image/352/422/xif0q/protein-supplement/m/v/l/weight-gainers-mass-gainers-bulk-up-5-mass-gainer-with-muscle-original-imahb9azdtmbqnfw.jpeg?q=90&crop=false",
+    tags: ["muscle gain","lower back"]
+  },{
+    id: 608,
+    name: "EndoFit Fat Burner Capsules",
+    desc: "Supports metabolism and fat control for endomorph body types.",
+    price: 699,
+    img:"https://onemg.gumlet.io/l_watermark_346,w_480,h_480/a_ignore,w_480,h_480,c_fit,q_auto,f_auto/cropped/gdqckvntkq7ayydjfy7b.jpg",
+    tags: ["endomorph","major injury"]
+  },
+  {
+    id: 609,
+    name: "StretchMark Smooth Cream",
+    desc: "Fades appearance of stretch marks with cocoa butter and vitamin E.",
+    price: 579,
+    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8sEPe6x6Vn9i0kOkR-xppRnQeXbZPsW40A&s",
+    tags: ["stretch marks","ectomorph"]
+  },
+  {
+    id: 610,
+    name: "Shoulder Relief Patch",
+    desc: "Easy-apply patch for relaxing sore shoulder muscles.",
+    price: 229,
+    img: "https://m.media-amazon.com/images/I/61p3+ejBluL.jpg",
+    tags: ["shoulders","mesomorph"]
   }
+
+
 ];
 
 export const lifestyleProducts = [
@@ -454,7 +531,7 @@ export const lifestyleProducts = [
     desc: "Improves posture during sedentary activities or desk work.",
     price: 899,
     img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRZ9hlN6Uz5A-dFW5tPEVa2UHNnGb0R8RAaI02sURb_8ZfLPwEcfCRq90cVoI_B1BaalcsCaiZeeDYUTnbkARcRhJEsZZ_dX6HZYCz4kJaIwwQDw7kmhk3HHg",
-    tags: ["sedentary"],
+    tags: ["sedentary","knees"],
   },
   {
     id: 405,
@@ -510,7 +587,7 @@ export const lifestyleProducts = [
     desc: "Combo of sunglasses, hydration band, and timer watch for short outings.",
     price: 699,
     img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQcgIUOkcsocd8DrtrAxrj81w5QZG0ekXL-MZovkzSW95I5ov5Mb-eOwIN1Mv1BofOYL5eEuwxfdeH5n74Q4KEV4VBJZzFE8-qpJJG_WFGG7XuIsbTG-vfh",
-    tags: ["<30min"],
+    tags: ["<30"],
   },
   {
     id: 412,
@@ -527,7 +604,14 @@ export const lifestyleProducts = [
     price: 1499,
     img: "/image/lifestyle13.jpg",
     tags: [">1hr"],
-  }
+  },  {
+    id: 414,
+    name: "BulkUp Muscle Gainer",
+    desc: "Protein and carb blend to support lean muscle gain goals.",
+    price: 799,
+    img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRLKnsmUNjE4bEJbKKT17EvFyX6QkD8sADrcabH7B2R1ofZItPH-vqv0GrgnJAwnd-EMN0F3NmPpnYUBaa0raQQkgERPIYvLOLRRROiIT-6TkDw_4fJv0pW1tw",
+    tags: ["minor injuries","muscle gain"]
+  },
 ];
 
 export const hairProducts = [

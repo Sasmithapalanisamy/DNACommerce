@@ -135,7 +135,7 @@ const CheckDNA = () => {
             <Select label="Body Skin Concern" value={skinConcern} setter={setSkinConcern} options={{ dryness: "Dryness", roughness: "Roughness", pigmentation: "Pigmentation" }} error={errors.skinConcern} />
             <Select label="Fitzpatrick Phototype" value={skinTone} setter={setSkinTone} options={{ I: "I – Very fair", II: "II", III: "III", IV: "IV", V: "V", VI: "VI – Very dark" }} error={errors.skinTone} />
             <Select label="Hair Type" value={hairType} setter={setHairType} options={{ straight: "Straight", wavy: "Wavy", curly: "Curly", coily: "Coily" }} error={errors.hairType} />
-            <Select label="Scalp Condition" value={scalp} setter={setScalp} options={{ dry: "Dry", oily: "Oily", balanced: "Balanced", dandruff: "Dandruff‑prone" }} error={errors.scalp} />
+            <Select label="Scalp Condition" value={scalp} setter={setScalp} options={{ dry: "Dry", oily: "Oily", balanced: "Balanced", "dandruff-prone": "Dandruff‑prone" }} error={errors.scalp} />
           </Section>
 
           <Section title="Lifestyle & Environment">
@@ -146,7 +146,7 @@ const CheckDNA = () => {
           </Section>
 
           <Section title="Nutrition & Hydration">
-            <Select label="Primary Health Goal" value={healthGoal} setter={setHealthGoal} options={{ "weight-loss": "Weight‑loss", "muscle-gain": "Muscle‑gain", maintenance: "Maintenance", "energy-boost": "Energy boost" }} error={errors.healthGoal} />
+            <Select label="Primary Health Goal" value={healthGoal} setter={setHealthGoal} options={{ "weight-loss": "Weight‑loss", "muscle gain": "Muscle gain", maintenance: "Maintenance", "energy-boost": "Energy boost" }} error={errors.healthGoal} />
             <Select label="Caffeine Intake" value={caffeine} setter={setCaffeine} options={{ none: "None", "<100": "<100 mg/day", "100-300": "100‑300 mg/day", ">300": ">300 mg/day" }} error={errors.caffeine} />
             <Slider label="Hydration (glasses/day)" value={hydration} setter={setHydration} min={0} max={12} error={errors.hydration} />
             <div>
@@ -159,12 +159,18 @@ const CheckDNA = () => {
             <div>
               <label className="block font-medium mb-1">Preferred Supplements</label>
               <div className="flex flex-wrap gap-4">
-                {["vitamin C", "omega‑3", "probiotics", "collagen"].map((i) => {
-                  const val = i.replace(/\s+/g, "");
+                {["vitaminC", "omega‑3", "probiotics", "collagen"].map((i) => {
                   return (
-                    <Checkbox key={val} label={i} value={val} checked={supplements.includes(val)} onChange={(e) => handleArrayChange(e, supplements, setSupplements)} />
+                    <Checkbox
+                      key={i}
+                      label={i}
+                      value={i}
+                      checked={supplements.includes(i)}
+                      onChange={(e) => handleArrayChange(e, supplements, setSupplements)}
+                    />
                   );
                 })}
+
               </div>
             </div>
           </Section>
